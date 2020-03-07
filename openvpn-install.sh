@@ -378,6 +378,7 @@ persist-key
 persist-tun
 status openvpn-status.log
 verb 3
+client-to-client
 crl-verify crl.pem" >> /etc/openvpn/server/server.conf
 	if [[ "$protocol" = "udp" ]]; then
 		echo "explicit-exit-notify" >> /etc/openvpn/server/server.conf
